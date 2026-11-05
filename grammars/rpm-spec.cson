@@ -242,23 +242,87 @@
   'architectures':
     'patterns': [
         {
-            'match': '\\b(?:noarch|i386|i586|x86_64|ia64|local)\\b',
+            'match': '\\b(?:noarch|i386|i486|i586|i686|pentium3|pentium4|athlon|geode|local)\\b',
             'name': 'constant.language.rpm-spec'
         }
         {
-            'match': '\\b(?:s390x|s390|armv6l|armv7hl|armv7l)\\b',
+            'match': '\\b(?:x86_64|x86_64_v2|x86_64_v3|x86_64_v4|amd64|em64t|ia32e|ia64)\\b',
             'name': 'constant.language.rpm-spec'
         }
         {
-            'match': '\\b(?:ppc64p7|ppc64le|ppc64|ppc|aarch64|riscv64)\\b',
+            'match': '\\b(?:s390x|s390|i370)\\b',
             'name': 'constant.language.rpm-spec'
         }
         {
-            'match': '\\b(?:alpha|sparc64|sparcv9|sparc)\\b',
+            'match': '\\b(?:armv3l|armv4b|armv4l|armv4tl|armv5tl|armv5tel|armv5tejl|armv6l|armv6hl|armv7l|armv7hl|armv7hnl|armv8l|armv8hl|armv8hnl|armv8hcnl)\\b',
+            'name': 'constant.language.rpm-spec'
+        }
+        {
+            'match': '\\b(?:aarch64)\\b',
+            'name': 'constant.language.rpm-spec'
+        }
+        {
+            'match': '\\b(?:mips|mipsel|mipsr6|mipsr6el)\\b',
+            'name': 'constant.language.rpm-spec'
+        }
+        {
+            'match': '\\b(?:mips64|mips64el|mips64r6|mips64r6el)\\b',
+            'name': 'constant.language.rpm-spec'
+        }
+        {
+            'match': '\\b(?:sparc|sparcv8|sparcv9|sparcv9v|sparc64|sparc64v)\\b',
+            'name': 'constant.language.rpm-spec'
+        }
+        {
+            'match': '\\b(?:alpha|alphaev5|alphaev56|alphapca56|alphaev6|alphaev67)\\b',
+            'name': 'constant.language.rpm-spec'
+        }
+        {
+            'match': '\\b(?:ppc64pseries|ppc64iseries|ppc64p7|ppc64le|ppc64|ppc8260|ppc8560|ppc32dy4|ppciseries|ppcpseries|ppc)\\b',
+            'name': 'constant.language.rpm-spec'
+        }
+        {
+            'match': '\\b(?:riscv32)\\b',
+            'name': 'constant.language.rpm-spec'
+        }
+        {
+            'match': '\\b(?:riscv64)\\b',
+            'name': 'constant.language.rpm-spec'
+        }
+        {
+            'match': '\\b(?:riscv128)\\b',
+            'name': 'constant.language.rpm-spec'
+        }
+        {
+            'match': '\\b(?:loongarch64)\\b',
+            'name': 'constant.language.rpm-spec'
+        }
+        {
+            'match': '\\b(?:e2k|e2kv4|e2kv5|e2kv6|e2k4c|e2k8c|e2k1cp|e2k8c2|e2k12c|e2k16c|e2k2c3)\\b',
+            'name': 'constant.language.rpm-spec'
+        }
+        {
+            'match': '\\b(?:m68kmint|m68k)\\b',
+            'name': 'constant.language.rpm-spec'
+        }
+        {
+            'match': '\\b(?:atariste|atarist|ataritt|atariclone|falcon|milan|hades)\\b',
+            'name': 'constant.language.rpm-spec'
+        }
+        {
+            'match': '\\b(?:sh4a|sh4|sh3|sh)\\b',
+            'name': 'constant.language.rpm-spec'
+        }
+        {
+            'match': '\\b(?:xtensa)\\b',
+            'name': 'constant.language.rpm-spec'
+        }
+        {
+            'match': '\\b(?:rs6000)\\b',
             'name': 'constant.language.rpm-spec'
         }
     ]
-  'metadata':
+'metadata':
     'patterns': [
       {
         'match': '^(?:Icon|ExclusiveOs|ExcludeOs|NoSource|NoPatch):',
