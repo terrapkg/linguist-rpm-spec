@@ -680,7 +680,7 @@
   'modifiers':
     'patterns': [
       {
-        'match': '^%(?:artifact|define|dir|doc|docdir|ghost|global|missingok|readme|undefine)',
+        'match': '^%(?:artifact|define|dir|doc|docdir|ghost|global|license|missingok|readme|undefine)',
         'name': 'storage.modifier.rpm-spec'
       }
       {
